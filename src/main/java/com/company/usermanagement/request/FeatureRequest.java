@@ -1,5 +1,7 @@
 package com.company.usermanagement.request;
 
+import java.util.Objects;
+
 public class FeatureRequest {
     private String featureName;
     private String email;
@@ -27,5 +29,18 @@ public class FeatureRequest {
 
     public void setEnable(boolean enable) {
         this.enable = enable;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        FeatureRequest that = (FeatureRequest) o;
+        return enable == that.enable && Objects.equals(featureName, that.featureName) && Objects.equals(email, that.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(featureName, email, enable);
     }
 }

@@ -19,7 +19,7 @@ public class UserFeatureServiceImpl implements UserFeatureService {
     private UserFeatureRepository featureRepository;
 
     @Transactional
-    public boolean getFeatureByEmail(FeatureRequest req) throws Exception {
+    public boolean getFeatureByEmailAndFeatureName(FeatureRequest req) throws Exception {
         Optional<UserFeature> feature = featureRepository.findFeatureByEmailAndFeatureName(req.getEmail(), req.getFeatureName());
         if (feature.isPresent())
             return feature.get().getEnable();

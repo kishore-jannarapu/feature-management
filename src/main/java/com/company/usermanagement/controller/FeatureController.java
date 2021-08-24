@@ -6,11 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.company.usermanagement.model.Feature;
 
 import com.company.usermanagement.service.UserFeatureService;
 
@@ -24,7 +21,7 @@ public class FeatureController {
 
     @GetMapping(value = "/feature")
     public ResponseEntity<?> getFeatureByEmail(FeatureRequest request) throws Exception {
-        boolean access = featureService.getFeatureByEmail(request);
+        boolean access = featureService.getFeatureByEmailAndFeatureName(request);
         return ResponseEntity.ok(Collections.singletonMap("canAccess", access));
 
     }
