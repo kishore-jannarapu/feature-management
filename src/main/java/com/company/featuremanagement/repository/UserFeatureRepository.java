@@ -1,13 +1,11 @@
-package com.company.usermanagement.repository;
+package com.company.featuremanagement.repository;
 
 import java.util.Optional;
 
-import com.company.usermanagement.model.UserFeature;
+import com.company.featuremanagement.model.UserFeature;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-
-import com.company.usermanagement.model.Feature;
 
 @Repository
 public interface UserFeatureRepository extends CrudRepository<UserFeature, Long> {

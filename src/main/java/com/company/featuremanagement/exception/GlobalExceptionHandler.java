@@ -1,4 +1,4 @@
-package com.company.usermanagement.exception;
+package com.company.featuremanagement.exception;
 
 import java.util.Date;
 

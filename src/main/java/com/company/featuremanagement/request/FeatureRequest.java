@@ -1,4 +1,4 @@
-package com.company.usermanagement.request;
+package com.company.featuremanagement.request;
 
 import java.util.Objects;
 

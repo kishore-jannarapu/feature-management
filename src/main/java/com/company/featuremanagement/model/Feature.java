@@ -1,4 +1,4 @@
-package com.company.usermanagement.model;
+package com.company.featuremanagement.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;

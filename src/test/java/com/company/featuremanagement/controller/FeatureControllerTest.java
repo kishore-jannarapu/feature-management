@@ -1,7 +1,8 @@
-package com.company.usermanagement.controller;
+package com.company.featuremanagement.controller;
 
-import com.company.usermanagement.request.FeatureRequest;
-import com.company.usermanagement.service.UserFeatureService;
+import com.company.featuremanagement.request.FeatureRequest;
+import com.company.featuremanagement.response.FeatureResponse;
+import com.company.featuremanagement.service.UserFeatureService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -78,14 +79,5 @@ public class FeatureControllerTest {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-    }
-    static class FeatureResponse{
-        private boolean canAccess;
-        public boolean isCanAccess() {
-            return canAccess;
-        }
-        public void setCanAccess(boolean canAccess) {
-            this.canAccess = canAccess;
-        }
-    }
+    }   
 }

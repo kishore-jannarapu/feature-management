@@ -1,7 +1,6 @@
-package com.company.usermanagement.service;
+package com.company.featuremanagement.service;
 
-import com.company.usermanagement.model.Feature;
-import com.company.usermanagement.request.FeatureRequest;
+import com.company.featuremanagement.request.FeatureRequest;
 
 public interface UserFeatureService {
     public boolean getFeatureByEmailAndFeatureName(FeatureRequest request) throws Exception;

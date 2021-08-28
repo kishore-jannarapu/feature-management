@@ -1,15 +1,15 @@
-package com.company.usermanagement.service.impl;
+package com.company.featuremanagement.service.impl;
 
 import java.util.Optional;
 
-import com.company.usermanagement.exception.ResourceNotFoundException;
-import com.company.usermanagement.model.UserFeature;
-import com.company.usermanagement.request.FeatureRequest;
+import com.company.featuremanagement.exception.ResourceNotFoundException;
+import com.company.featuremanagement.model.UserFeature;
+import com.company.featuremanagement.request.FeatureRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.company.usermanagement.repository.UserFeatureRepository;
-import com.company.usermanagement.service.UserFeatureService;
+import com.company.featuremanagement.repository.UserFeatureRepository;
+import com.company.featuremanagement.service.UserFeatureService;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service

@@ -1,4 +1,4 @@
-package com.company.usermanagement.model;
+package com.company.featuremanagement.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

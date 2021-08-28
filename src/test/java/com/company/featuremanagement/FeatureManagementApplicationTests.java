@@ -1,4 +1,4 @@
-package com.company.usermanagement;
+package com.company.featuremanagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
